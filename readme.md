@@ -12,7 +12,7 @@ Notre stagiaire a déjà créé un template statique en HTML et CSS, il ne vous 
 
 Bijour chez vous.
 
-## le projet doit être disponible sur un nouveau repo et un Github Pages !
+## le projet doit être cloner pour ensuite être disponible sur un nouveau repo et un Github Pages !
 
 ## Bonus
 
