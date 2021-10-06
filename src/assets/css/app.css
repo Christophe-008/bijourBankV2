@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
+body {
+  background-color: #f2f2f2;
+  font-family: "Raleway", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.pTop50 {
+  padding-top: 50px;
+}
+.add {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9;
+}
+.add button {
+  margin: 0;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+header {
+  position: sticky;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2px);
+  top: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  margin-bottom: 50px;
+}
+.solde {
+  font-size: 2.5rem;
+  line-height: 1.8rem;
+  margin: 0;
+  font-weight: 800;
+}
+.good {
+  color: green;
+}
+.bad {
+  color: red;
+}
+.navHeader {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid grey;
+  border-radius: 25px;
+  overflow: hidden;
+  margin: 10px 0 20px 0;
+}
+.navHeader a {
+  display: block;
+  flex: 1;
+  text-align: center;
+  padding: 2px 0;
+}
+.navHeader a.active,
+.navHeader a:hover {
+  background-color: black;
+  color: white;
+}
+
+.operation {
+  margin-bottom: 20px;
+}
+.operation .picto img {
+  width: 35px;
+}
+.operation h2,
+.operation .count {
+  margin: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+  font-weight: 800;
+}
+.operation .count {
+  font-size: 1rem;
+}
+.operation small {
+  color: grey;
+}
+
+.operation.debit .count {
+  color: red;
+}
+
+.reveal h2 {
+  margin-bottom: 20px;
+}
+.btSubmit {
+  font-size: 3rem;
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 8px !important;
+  background-color: #225e96;
+  transition: 0.3s;
+}
+.btSubmit:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}

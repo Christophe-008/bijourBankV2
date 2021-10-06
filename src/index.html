@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BijourBank_V2</title>
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.3/css/foundation.min.css"
+    />
+    <!-- Compressed JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.7.3/js/foundation.min.js"></script>
+  </head>
+  <body>
+    <div class="small reveal" id="exampleModal1" data-reveal>
+      <h2>Ajouter une opération</h2>
+      <form action="#" id="operationForm">
+        <div>
+          <label for="operator"><small>champ obligatoire</small></label>
+          <select name="operator" id="operator" required>
+            <option value="--">-- choisir --</option>
+            <option value="credit">+</option>
+            <option value="debit">-</option>
+          </select>
+        </div>
+        <div>
+          <label for="titre"><small>champ obligatoire</small></label>
+          <input
+            type="text"
+            name="titre"
+            id="titre"
+            placeholder="titre de l'opération"
+            required
+          />
+        </div>
+        <div>
+          <input type="text" name="desc" id="desc" placeholder="description" />
+        </div>
+        <div>
+          <label for="montant"><small>champ obligatoire</small></label>
+          <input
+            type="number"
+            name="montant"
+            id="montant"
+            placeholder="indiquer un montant"
+            required
+          />
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btSubmit">👊</button>
+        </div>
+      </form>
+      <button
+        class="close-button"
+        data-close
+        aria-label="Close modal"
+        type="button"
+      >
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <header>
+      <div class="grid-container pTop50">
+        <div class="grid-x">
+          <div class="cell">
+            <div class="text-center">
+              <h1 id="solde" class="solde">2 560.00€</h1>
+              <small class="good">on est bien 😃</small>
+              <canvas id="myChart" width="400" height="100"></canvas>
+            </div>
+          </div>
+          <div class="cell">
+            <div>
+              <nav class="navHeader">
+                <a href="#" class="active">Tout</a>
+                <a href="#">Crédit</a>
+                <a href="#">Débit</a>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="grid-container">
+        <!-- operation -->
+        <div class="operation credit">
+          <div class="grid-x grid-padding-x align-middle">
+            <div class="cell shrink">
+              <div class="picto">
+                <img src="./assets/images/sac-dargent.png" alt="credit" />
+              </div>
+            </div>
+            <div class="cell auto">
+              <div>
+                <h2>Salaire</h2>
+                <small>mois de septembre</small>
+              </div>
+            </div>
+            <div class="cell small-3 text-right">
+              <div>
+                <p class="count">1 200€</p>
+                <small>100%</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- operation -->
+        <div class="operation debit">
+          <div class="grid-x grid-padding-x align-middle">
+            <div class="cell shrink">
+              <div class="picto">
+                <img src="./assets/images/depenses.png" alt="dedit" />
+              </div>
+            </div>
+            <div class="cell auto">
+              <div>
+                <h2>Loyer</h2>
+                <small>mois d'aoüt</small>
+              </div>
+            </div>
+            <div class="cell small-3 text-right">
+              <div>
+                <p class="count">450€</p>
+                <small>37.5%</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- operation -->
+        <div class="operation credit">
+          <div class="grid-x grid-padding-x align-middle">
+            <div class="cell shrink">
+              <div class="picto">
+                <img src="./assets/images/sac-dargent.png" alt="credit" />
+              </div>
+            </div>
+            <div class="cell auto">
+              <div>
+                <h2>Vente Boncoin</h2>
+                <small>jeu PS5</small>
+              </div>
+            </div>
+            <div class="cell small-3 text-right">
+              <div>
+                <p class="count">25€</p>
+                <small>3.33%</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- operation -->
+        <div class="operation debit">
+          <div class="grid-x grid-padding-x align-middle">
+            <div class="cell shrink">
+              <div class="picto">
+                <img src="./assets/images/depenses.png" alt="dedit" />
+              </div>
+            </div>
+            <div class="cell auto">
+              <div>
+                <h2>Restaurant</h2>
+                <small>mc do</small>
+              </div>
+            </div>
+            <div class="cell small-3 text-right">
+              <div>
+                <p class="count">15€</p>
+                <small>1.9%</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- operation -->
+        <div class="operation credit">
+          <div class="grid-x grid-padding-x align-middle">
+            <div class="cell shrink">
+              <div class="picto">
+                <img src="./assets/images/sac-dargent.png" alt="credit" />
+              </div>
+            </div>
+            <div class="cell auto">
+              <div>
+                <h2>Réalisation de site web</h2>
+                <small>ma mairie</small>
+              </div>
+            </div>
+            <div class="cell small-3 text-right">
+              <div>
+                <p class="count">1 800€</p>
+                <small>236.84%</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="add">
+      <button class="button" data-open="exampleModal1">+</button>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="./assets/js/dataGraph.js"></script>
+  <script src="./assets/js/app.js"></script>
+</html>
