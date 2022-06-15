@@ -10,7 +10,7 @@ Bijour, on nous a dit que vous étiez DEVELOPPEUR.SE, nous représentons la soci
 
 Notre stagiaire a déjà créé un template statique en HTML et CSS, il ne vous reste plus qu'à rendre l'interface DYNAMIQUE et UTILISABLE via JS. Nous comptons sur votre talent pour rendre ce projet **ultra rentable**
 
-🛩️ Nous avons rendez-vous à Dubaï avec Elon & Bill pour une démonstration, nous comptons sur vous pour rendre le projet abouti pour ce Jeudi 28 Octobre à 12h12 🍹🌴.
+🛩️ Nous avons rendez-vous à Dubaï avec Elon & Bill pour une démonstration, nous comptons sur vous pour rendre le projet abouti pour ce Lundi 27 Juin à 12h12 🍹🌴.
 
 Bijour chez vous.
 
